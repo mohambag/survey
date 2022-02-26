@@ -1,0 +1,18 @@
+{
+    "name": "mbagri/survey",
+    "description": "laravel survey",
+    "authors": [
+        {
+            "name": "Mohammad Bagri",
+            "email": "m.bagri90@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "M.bagri\\Survey\\": "src/"
+        }
+    },
+    "require": {
+        "illuminate/support": ">=v6.0.0"
+    }
+}
