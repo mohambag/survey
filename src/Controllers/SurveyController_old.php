@@ -1,15 +1,17 @@
 <?php
 
-namespace Mbagri\Survey\Controllers;
+namespace Mbagri\Survey;
 
+use App\Models\Score;
+use App\Models\Survey;
 use App\Http\Requests\StoreSurveyRequest;
+use App\Http\Requests\UpdateSurveyRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Mbagri\Survey\Score;
-use Mbagri\Survey\Survey;
 use Mockery\Exception;
 
-class SurveyController
+
+class SurveyControllerOld extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -63,7 +65,7 @@ class SurveyController
     public function survey(Survey $survey)
     {
         $id=$survey->id;
-        $check= Score::where('survey_id',$survey->id)->where('user_id',Auth::id())->first();
+       $check= Score::where('survey_id',$survey->id)->where('user_id',Auth::id())->first();
         if (isset($check)){
             return redirect()->route('show.result',compact('id'));
         }else{
@@ -127,7 +129,7 @@ class SurveyController
             'survey'=>Survey::where('id',$id)->first(),
         ];
 
-        return view( 'result',compact('result'));
+            return view( 'result',compact('result'));
 
     }
 
