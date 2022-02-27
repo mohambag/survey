@@ -2,11 +2,11 @@
 
 namespace Mbagri\Survey;
 
-class Surveyold
+class Survey
 {
     public function getSurvey()
     {
-        dd(__DIR__);
-//        return ['one', 'two'];
+//        dd(__DIR__);
+        return 'survey';
     }
 }
