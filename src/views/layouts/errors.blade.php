@@ -15,7 +15,7 @@
     </div>
 @endif
 
-@if(count($errors) > 0)
+@if(isset($errors))
     <div class="alert alert-info">
         <ul>
             @foreach($errors->all() as $error)
