@@ -97,7 +97,7 @@ class SurveyControllerOld extends Controller
      */
     public function showSurvey($id)
     {
-//      $survey=Survey::where('survey_id',$survey->id)->all();
+//      $survey=Surveyold::where('survey_id',$survey->id)->all();
         $ans0 = Score::where('score', 'ans0')->where('survey_id',$id)->count();
         $ans1 = Score::where('score', 'ans1')->where('survey_id',$id)->count();
         $ans2 = Score::where('score', 'ans2')->where('survey_id',$id)->count();

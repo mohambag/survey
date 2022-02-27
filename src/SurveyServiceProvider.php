@@ -10,7 +10,7 @@ class SurveyServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind('survey', function () {
-            return new Survey;
+            return new Surveyold;
         });
     }
 
@@ -19,7 +19,7 @@ class SurveyServiceProvider extends ServiceProvider
 //        return __DIR__.'\routes.php';
 
         $this->publishes([
-            __DIR__.'/config.php'=>config_path('Survey.php'),
+//            __DIR__.'/config.php'=>config_path('Surveyold.php'),
             __DIR__ . '/views'=>base_path('resources/views'),
             __DIR__.'/migrations'=>database_path('migrations'),
         ]);

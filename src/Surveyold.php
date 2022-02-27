@@ -2,7 +2,7 @@
 
 namespace Mbagri\Survey;
 
-class Survey
+class Surveyold
 {
     public function getSurvey()
     {
