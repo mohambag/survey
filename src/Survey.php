@@ -2,11 +2,16 @@
 
 namespace Mbagri\Survey;
 
-class Survey
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Survey extends Model
 {
-    public function getSurvey()
+    use HasFactory;
+
+
+    public function scores()
     {
-//        dd(__DIR__);
-        return 'survey';
+        return $this->hasMany(Score::class,'survey_id','id');
     }
 }

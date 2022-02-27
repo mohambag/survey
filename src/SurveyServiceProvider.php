@@ -19,7 +19,6 @@ class SurveyServiceProvider extends ServiceProvider
 //        return __DIR__.'\routes.php';
 
         $this->publishes([
-//            __DIR__.'/config.php'=>config_path('Survey.php'),
             __DIR__ . '/views'=>base_path('resources/views'),
             __DIR__.'/migrations'=>database_path('migrations'),
         ]);
