@@ -3,6 +3,7 @@
 namespace Mbagri\Survey;
 
 use Illuminate\Support\ServiceProvider;
+use Mbagri\Survey\Middleware\Authenticate;
 
 class SurveyServiceProvider extends ServiceProvider
 {
@@ -17,7 +18,7 @@ class SurveyServiceProvider extends ServiceProvider
     public function boot()
     {
 //        return __DIR__.'\routes.php';
-
+        $this->app['router']->alliasMiddleware('Authentic',Authenticate::class);
         $this->publishes([
             __DIR__ . '/views'=>base_path('resources/views'),
             __DIR__.'/migrations'=>database_path('migrations'),
