@@ -1,6 +1,7 @@
 {
     "name": "mbagri/survey",
     "description": "laravel survey",
+    "license": "MIT",
     "authors": [
         {
             "name": "Mohammad Bagri",
