@@ -2,6 +2,7 @@
 
 namespace Mbagri\Survey\Controllers;
 
+use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreSurveyRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -9,7 +10,7 @@ use Mbagri\Survey\Score;
 use Mbagri\Survey\Survey;
 use Mockery\Exception;
 
-class SurveyController
+class SurveyController extends Controller
 {
     /**
      * Display a listing of the resource.
