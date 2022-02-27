@@ -1,6 +1,6 @@
 <?php
 
-namespace Mbagri\Survey\Requests;
+namespace Mbagri\Survey\Controllers;
 
 use Illuminate\Foundation\Http\FormRequest;
 

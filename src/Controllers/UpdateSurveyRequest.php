@@ -1,10 +1,10 @@
 <?php
 
-namespace Mbagri\Survey\Requests;
+namespace Mbagri\Survey\Controllers;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreScoreRequest extends FormRequest
+class UpdateSurveyRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
