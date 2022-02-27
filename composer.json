@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "M.bagri\\Survey\\": "src/"
+            "Mbagri\\Survey\\": "src/"
         }
     },
     "require": {
