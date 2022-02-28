@@ -124,8 +124,8 @@
                 @endif
             @endif
             <div class="form-group button-btn">
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <a href="{{route('show.result',$survey->id)}}" class="btn btn-primary">Result</a>
+            <button type="submit" class="btn btn-primary">ارسال نظر</button>
+            <a href="{{route('show.result',$survey->id)}}" class="btn btn-primary">مشاهده نتیجه</a>
             </div>
         </form>
 
