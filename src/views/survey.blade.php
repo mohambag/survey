@@ -31,13 +31,16 @@
         z-index: 20;
     @endif
      }
+    .card-header,.card-title,.button-btn{
+        text-align: center !important;
+    }
 </style>
 
 <div class="card" id="main-tag" style="overflow: hidden;float:right;border-color: {{$survey->colorBackgroundTitle}}">
     <h5 class="card-header"
         style="color: {{$survey->colorTitle}} ;background-color: {{$survey->colorBackgroundTitle}}">  {{$survey->title}}</h5>
     <div class="card-body" style="background-color: {{$survey->colorBackground}}">
-        <h5 class="card-title">  {{$survey->question}}</h5>
+        <h5 class="card-title" >  {{$survey->question}}</h5>
         <form action="{{route('survey.submit',$survey->id)}}" method="POST" class="form-control"
               style="height: 700px;background-color: {{$survey->colorBackground}}; border: none" id="survey-form">
 
@@ -120,8 +123,10 @@
                     @endif
                 @endif
             @endif
+            <div class="form-group button-btn">
             <button type="submit" class="btn btn-primary">Submit</button>
             <a href="{{route('show.result',$survey->id)}}" class="btn btn-primary">Result</a>
+            </div>
         </form>
 
   </div>
