@@ -24,10 +24,11 @@
     #main-tag {
     @if($survey->width !=null)
         width: {{$survey->width}}px !important;
-       height: {{$survey->height}}px !important;
+        height: {{$survey->height}}px !important;
        @else
         min-width:100% !important;
         min-height: 100% !important;
+        z-index: 20;
     @endif
      }
 </style>
