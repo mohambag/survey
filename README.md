@@ -2,8 +2,10 @@
 1-	در ابتدا می بایست پکیج auth لاراول نصب شود(در صورتی که پکیج auth لاراول از قبل نصب شده باشد نیازی به انجام این مرحله نمی باشد).
 •	composer require laravel/ui:^2.4
 •	php artisan ui vue –auth
+
 2-	سپس با دستور زیر پکیج نظرسنجی را نصب می شود.
 •	composer require mbagri/survey
+
 3-	فایل زیر را در مسیر config/app.php در بخش providers قرار  می دهیم
  Mbagri\Survey\SurveyServiceProvider::class,
 4-	فایل زیر را در مسیر  config/app.phpدر بخش aliases قرار می دهیم
