@@ -21,13 +21,15 @@
     label{
         margin-right: 5px;
     }
-
-    @if($survey->width !=null)
     #main-tag {
-    width: {{$survey->width}}px !important;
-    height: {{$survey->height}}px !important;
-    }
+    @if($survey->width !=null)
+        width: {{$survey->width}}px !important;
+       height: {{$survey->height}}px !important;
+       @else
+        min-width:100% !important;
+        min-height: 100% !important;
     @endif
+     }
 </style>
 
 <div class="card" id="main-tag" style="overflow: hidden;float:right;border-color: {{$survey->colorBackgroundTitle}}">
