@@ -3,7 +3,7 @@
 use \Illuminate\Support\Facades\Route;
 
 Route::prefix('/')->middleware(['web','auth'])->group(function (){
-    Route::get('/',[\Mbagri\Survey\Controllers\SurveyController::class,'index'])->name('index');
+    Route::get('/index',[\Mbagri\Survey\Controllers\SurveyController::class,'index'])->name('index');
     Route::post('/store',[\Mbagri\Survey\Controllers\SurveyController::class,'store'])->name('send');
     Route::get('/survey{survey}',[\Mbagri\Survey\Controllers\SurveyController::class,'survey'])->name('survey');
 //    Route::get('/survey/{id}',[\Mbagri\Survey\Controllers\SurveyController::class,'survey']);
